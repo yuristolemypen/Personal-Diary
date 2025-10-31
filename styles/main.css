@@ -1,0 +1,90 @@
+main {
+ grid-area: main;
+}
+
+.main-header {
+  display: flex;
+  border: 1px solid var(--border-primary);
+  border-bottom: none;
+  border-top: none;
+  align-items: start;
+  gap: 20px;
+  padding: 20px 60px;
+}
+
+.entry-searchbar-profile {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.entry-input {
+  font-family: "Roboto";
+  border: none;
+  resize: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--text-primary);
+  background-color: var(--main-primary);
+  width: 600px;
+}
+
+.entry-input:focus {
+  outline: none;
+}
+
+.entry-grid-container {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  border: solid 1px var(--border-primary)
+}
+
+.entry-info {
+  display: grid;
+  grid-template-rows:  100px 100px 100px;
+}
+
+.entry-info div {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.entry-profile {
+  width: 75px;
+  border-radius: 30%;
+}
+
+.entry-profile-container {
+  
+}
+
+.entry-name-container {
+  
+}
+
+.date-and-time-container {
+  
+}
+
+
+.entry-content {
+  padding: 20px 0;
+  height: 300px;
+}
+
+.entry-scroll {
+  height: 100%;
+  padding: 0 30px 0 40px;
+  overflow-y: auto;
+  text-wrap: wrap;
+  text-indent: 1.25rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-primary) var(--scrollbar-outline-primary);
+}
+
+a {}

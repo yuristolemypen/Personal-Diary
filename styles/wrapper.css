@@ -1,0 +1,21 @@
+.page-wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 65px 1fr;
+  grid-template-areas: 
+    "header"
+    "main";
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    ". entry-wrapper .";
+}
+
+.entry-wrapper {
+  grid-area: entry-wrapper;
+  background-color: var(--main-primary);
+  width: clamp(600px, 50vw, 800px);
+}

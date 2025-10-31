@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <linK rel="stylesheet" href="../styles/general.css">
+    <linK rel="stylesheet" href="../styles/header.css">
+    <linK rel="stylesheet" href="../styles/main.css">
+    <linK rel="stylesheet" href="../styles/wrapper.css">
+    
+    <script type="module" src="../scripts/index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="top-header">
+        <div class="top-header-container">
+          <div class="header-left">
+            <img class="header-profile-picture" src="../images/icons/entry_profile.jpg">
+            <p class="header-profile-name">Name</p>
+          </div>
+          <nav class="header-middle">
+            <input type="radio" name="tab" id="tab1">
+            <label for="tab1" class="header-middle-anchor">
+              <a href="#"> Personal Journal </a>
+            </label>
+            <input type="radio" name="tab" id="tab2">
+            <label for="tab2" class="header-middle-anchor">
+              <a href="#"> Coding Epiphanies </a>
+            </label>
+            <input type="radio" name="tab" id="tab3">
+            <label for="tab3" class="header-middle-anchor">
+              <a href="#"> Coding Concepts </a>
+            </label>
+            <input type="radio" name="tab" id="tab4">
+            <label for="tab4" class="header-middle-anchor">
+              <a href="#"> Gallery </a>
+            </label>
+          </nav>
+          <div class="header-right">
+            <div class="searchbar-container">
+              <div class="searchbar-icon-container">
+                <img class="searchbar-icon" src="../images/svg-icons/searchbar-icon.svg">
+              </div>
+              <input class="searchbar" type="text" placeholder="Search">
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-wrapper">
+          <div id="js-entry-wrapper" class="entry-wrapper">
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

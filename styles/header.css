@@ -1,0 +1,123 @@
+.top-header {
+  display: flex;
+  position: fixed;
+  background-color: var(--header-primary);
+  border: solid 1px var(--border-primary);
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 65px;
+  grid-area: header;
+  z-index: 3;
+  white-space: nowrap;
+  backdrop-filter: blur(50px);
+}
+
+.top-header-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+  height: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-profile-picture {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.header-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(600px, 50vw, 800px);
+}
+
+.header-middle input[type="radio"] {
+  display: none;
+}
+
+.header-middle a {
+  color: var(--text-secondary);
+  font-family: "Roboto";
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.header-middle-anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.1s;
+}
+
+.header-middle-anchor:hover {
+  background-color: var(--hover-primary);
+}
+
+.header-middle-anchor:active {
+  background-color: var(--hover-secondary);
+}
+
+.header-middle input[type="radio"]:checked+.header-middle-anchor {
+  border-bottom: 2px solid var(--nav-focus-primary);
+}
+
+.header-middle input[type="radio"]:checked+.header-middle-anchor a {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 20px;
+  transition: border-color 0.2s; 
+}
+
+.searchbar-container:focus-within {
+  border: 2px solid var(--searchbar-border-primary);
+}
+
+.searchbar-icon-container {
+  padding-left: 12px;
+}
+
+.searchbar-icon {
+  width: 16px;
+  transform: translate(0, 2px);
+}
+
+.searchbar {
+  font-family: "Roboto";
+  border: none;
+  width: 300px;
+  font-size: 1rem;
+  padding: 10px 24px 10px 4px;
+  color: var(--text-primary);
+  background-color: transparent;
+}
+
+.searchbar:focus {
+  outline: none;
+}
+
+.searchbar::placeholder {
+  font-family: "Roboto";
+  color: var(--text-secondary);
+  font-size: 1rem;
+}

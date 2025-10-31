@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-primary: #0F0F0F;
+  --text-primary: #FFFFFF;
+  --text-secondary: #80848a;
+  --header-primary: #121214;
+  --main-primary: #202024;
+  --nav-focus-primary: #1D9BF0;
+  --border-primary: #5a5a5f;
+  --searchbar-border-primary: #43A9ED;
+  --hover-primary: #414141b4; 
+  --hover-secondary: #414141f8;
+  --scrollbar-primary: #9F9F9F;
+  --scrollbar-outline-primary: #2C2C2C;
+}
+
+body {
+  background-color: var(--background-primary);
+  font-family: "Roboto", "Open Sans", "Karla", Arial;
+  font-weight: 400;
+  color: var(--text-primary);
+}
