@@ -24,21 +24,21 @@
             <p class="header-profile-name">Name</p>
           </div>
           <nav class="header-middle">
-            <input type="radio" name="tab" id="tab1">
+            <input type="radio" name="tab" id="tab1" checked>
             <label for="tab1" class="header-middle-anchor">
-              <a href="#"> Personal Journal </a>
+              <span> Personal Journal </span>
             </label>
             <input type="radio" name="tab" id="tab2">
             <label for="tab2" class="header-middle-anchor">
-              <a href="#"> Coding Epiphanies </a>
+              <span> Coding Epiphanies </span>
             </label>
             <input type="radio" name="tab" id="tab3">
             <label for="tab3" class="header-middle-anchor">
-              <a href="#"> Coding Concepts </a>
+              <span> Coding Concepts </span>
             </label>
             <input type="radio" name="tab" id="tab4">
             <label for="tab4" class="header-middle-anchor">
-              <a href="#"> Gallery </a>
+              <span> Gallery </span>
             </label>
           </nav>
           <div class="header-right">
@@ -54,8 +54,19 @@
 
       <main>
         <div class="main-wrapper">
-          <div id="js-entry-wrapper" class="entry-wrapper">
-          </div>
+          <section id="personal-journal" class="tab-section">
+            <div id="js-entry-wrapper" class="entry-wrapper">
+            </div>
+          </section>
+          <section id="coding-epiphanies" class="tab-section">
+            <p>Welcome to Coding Epiphanies ✨</p>
+          </section>
+          <section id="coding-concepts" class="tab-section">
+            <p>Welcome to Coding Concepts 💡</p>
+          </section>
+          <section id="gallery" class="tab-section">
+            <p>Gallery coming soon 🖼️</p>
+          </section>
         </div>
       </main>
     </div>

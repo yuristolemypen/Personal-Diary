@@ -7,13 +7,6 @@
     "main";
 }
 
-.main-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-    ". entry-wrapper .";
-}
-
 .entry-wrapper {
   grid-area: entry-wrapper;
   background-color: var(--main-primary);

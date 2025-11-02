@@ -35,3 +35,4 @@ export function renderEntryInfo() {
   document.getElementById('js-entry-wrapper')
     .innerHTML = entryInfoHTML;
 }
+

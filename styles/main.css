@@ -12,6 +12,17 @@ main {
   padding: 20px 60px;
 }
 
+.tab-section {
+  display: none;
+}
+
+.tab-section.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". entry-wrapper .";
+}
+
 .entry-searchbar-profile {
   width: 32px;
   border-radius: 50%;
