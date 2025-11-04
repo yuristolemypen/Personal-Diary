@@ -68,7 +68,7 @@ main {
   border-radius: 30%;
 }
 
-.entry-profile-container {
+/* .entry-profile-container {
   
 }
 
@@ -78,7 +78,7 @@ main {
 
 .date-and-time-container {
   
-}
+} */
 
 
 .entry-content {
@@ -98,4 +98,12 @@ main {
   scrollbar-color: var(--scrollbar-primary) var(--scrollbar-outline-primary);
 }
 
-a {}
+.concept-container {
+  border: solid 1px var(--border-primary);
+}
+
+.concept-item {
+  list-style-type: none;
+  padding: 12px;
+  text-indent: 1.25rem;
+}

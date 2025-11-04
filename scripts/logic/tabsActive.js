@@ -1,15 +1,14 @@
 const tabs = document.querySelectorAll('input[name="tab"]');
-const sections = document.querySelectorAll(".tab-section");
+const sections = document.querySelectorAll('.tab-section');
 
 
-export function showActiveSection()  {
+export function showActiveSection() {
   // Hide all tab sections by removing the "active" class from each
-  sections.forEach(section => section.classList.remove("active"));
-  
+  sections.forEach((section) => section.classList.remove("active"));
+
   const checkedTab = document.querySelector('input[name="tab"]:checked');
 
   if (checkedTab) {
-    // A simple mapping between radio button IDs and section IDs
     const idMap = {
       tab1: "personal-journal",
       tab2: "coding-epiphanies",
@@ -22,4 +21,6 @@ export function showActiveSection()  {
   }
 };
 
-tabs.forEach(tab => tab.addEventListener("change", showActiveSection));
+tabs.forEach((tab) => {
+  tab.addEventListener("change", showActiveSection);
+});
