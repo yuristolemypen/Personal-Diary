@@ -24,7 +24,7 @@
             <p class="header-profile-name">Name</p>
           </div>
           <nav class="header-middle">
-            <input type="radio" name="tab" id="tab1" checked>
+            <input type="radio" name="tab" id="tab1">
             <label for="tab1" class="header-middle-anchor">
               <span> Personal Journal </span>
             </label>
@@ -32,7 +32,7 @@
             <label for="tab2" class="header-middle-anchor">
               <span> Coding Epiphanies </span>
             </label>
-            <input type="radio" name="tab" id="tab3">
+            <input type="radio" name="tab" id="tab3"checked>
             <label for="tab3" class="header-middle-anchor">
               <span> Coding Concepts </span>
             </label>
@@ -66,9 +66,25 @@
             <div class="entry-wrapper">
               <article class="concept-container">
                 <section class="concept-category">
-                  <h2 class="concept-category-title">JavaScript</h2>
+                  <div class="concept-category-title-container">
+                    <h2 class="concept-category-title">JavaScript</h2>
+                    <button class="expand-btn">
+                      <img src="../images/svg-icons/plus-btn.svg">
+                    </button>
+                    <button class="shrink-btn">
+                      <img src="../images/svg-icons/minus-btn.svg">
+                    </button>
+                  </div>
                   <section class="concept-subcategory">
-                    <button class="concept-subcategory-btn">DOM Manipulation expandable</button>
+                    <div class="concept-subcategory-title-container">
+                      <button class="expand-btn">
+                        <img src="../images/svg-icons/plus-btn.svg">
+                      </button>
+                      <button class="shrink-btn">
+                        <img src="../images/svg-icons/minus-btn.svg">
+                      </button> 
+                      <button class="concept-subcategory-btn">DOM Manipulation expandable</button>
+                    </div>
                     <ul class="concept-list">
                       <li class="concept-item">
                         <button>concept item title expandable</button>
@@ -90,9 +106,25 @@
                   </section>
                 </section>
                 <section class="concept-category">
-                  <h2 class="concept-category-title">CSS</h2>
+                  <div class="concept-category-title-container">
+                    <h2 class="concept-category-title">CSS</h2>
+                    <button class="expand-btn">
+                      <img src="../images/svg-icons/plus-btn.svg">
+                    </button>
+                    <button class="shrink-btn">
+                      <img src="../images/svg-icons/minus-btn.svg">
+                    </button>
+                  </div>
                   <section class="concept-subcategory">
-                    <button class="concept-subcategory-btn">DOM Manipulation expandable</button>
+                    <div class="concept-subcategory-title-container">
+                      <button class="expand-btn">
+                        <img src="../images/svg-icons/plus-btn.svg">
+                      </button>
+                      <button class="shrink-btn">
+                        <img src="../images/svg-icons/minus-btn.svg">
+                      </button>
+                      <button class="concept-subcategory-btn">DOM Manipulation expandable</button>
+                    </div>
                     <ul class="concept-list">
                       <li class="concept-item">
                         <button>concept item title expandable</button>
@@ -118,7 +150,65 @@
           </section>
           <section id="gallery" class="tab-section">
             <div class="entry-wrapper">
-              <p>Gallery coming soon 🖼️</p>
+              <div id="js-gallery" class="gallery-container">
+                <section class="gallery-category">
+                  <div class="gallery-category-title-container">
+                    <h2 class="gallery-category-title">Oshi</h2>
+                    <button class="expand-btn">
+                      <img src="../images/svg-icons/plus-btn.svg">
+                    </button>
+                    <button class="shrink-btn">
+                      <img src="../images/svg-icons/minus-btn.svg">
+                    </button>
+                  </div>
+                  <ul class="gallery-album-list">
+                    <li class="gallery-album-item">
+                      <button class="gallery-album-title-btn">This is an album title</button>
+                    </li>
+                  </ul>
+                </section>
+                <section class="gallery-picture-container">
+                  <button class="gallery-return-btn">
+                    <img src="../images/svg-icons/return-btn.svg">
+                  </button>
+                  <button class="gallery-add-picture-btn">
+                    <img src="../images/svg-icons/gallery-add-btn.svg">
+                  </button>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                  <figure class="gallery-picture">
+                    <img src="../images/icons/entry_profile.jpg">
+                  </figure>
+                </section>
+              </div>
             </div>
           </section>
         </div>

@@ -102,8 +102,134 @@ main {
   border: solid 1px var(--border-primary);
 }
 
-.concept-item {
+.concept-category {
+  padding: 10px 20px 0 20px;
+}
+
+.concept-category-title-container,
+.concept-subcategory-title-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.concept-subcategory-btn {
+  font-family: "Roboto";
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.expand-btn,
+.shrink-btn {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.shrink-btn {
+  display: none;
+}
+
+.expand-btn img,
+.shrink-btn img {
+  width: 100%;
+}
+
+.concept-list button {
+  font-family: "Karla";
+  color: var(--text-underline);
+  font-size: 1.15rem;
+}
+
+.concept-list p {
+  font-size: 1rem;
+}
+
+.concept-list button:hover {
+  text-decoration: underline;
+}
+
+.concept-subcategory-btn,
+.concept-list button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.concept-item, 
+.gallery-album-list {
   list-style-type: none;
-  padding: 12px;
-  text-indent: 1.25rem;
+  padding: 6px 12px;
+  line-height: 1.5rem;
+}
+
+.gallery-container {
+  border: solid 1px var(--border-primary);
+}
+
+.gallery-category {
+  padding: 10px 20px 0 20px;
+}
+
+.gallery-category-title-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.gallery-album-title-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+.gallery-album-title-btn {
+  color: var(--text-underline)
+}
+
+.gallery-album-title-btn:hover {
+  text-decoration: underline;
+}
+
+.gallery-picture-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  row-gap: 30px;
+  padding: 60px 15px 30px 15px;
+  justify-content: space-around;
+}
+
+.gallery-picture-container.hidden {
+  display: none;
+}
+
+.gallery-return-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+.gallery-return-btn img {
+  width: 100%;
+  transform: scaleX(75%);
+}
+
+.gallery-add-picture-btn, .gallery-picture {
+  border: none;
+  width: 100%;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.gallery-picture-container img {
+  width: 100%;
 }
