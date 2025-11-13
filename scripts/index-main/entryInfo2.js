@@ -4,7 +4,7 @@ export function renderEntryInfo2() {
   let entryInfoHTML = `
     <header class="main-header">
       <img class="entry-searchbar-profile" src="../images/icons/entry_profile.jpg">
-      <div class="entry-input" contenteditable="true" data-placeholder="Add entry"></div>
+      <div class="entry-input" contenteditable="plaintext-only" data-placeholder="Add entry"></div>
     </header>
   `;
 

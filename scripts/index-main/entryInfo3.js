@@ -1,0 +1,42 @@
+import { entryInfo3 } from "../data/entryInfoData3.js";
+
+export function renderEntryInfo3() {
+  let entryInfoHTML = ``;
+
+  entryInfo3.forEach((info) => {
+    entryInfoHTML += `
+      <section class="concept-category">
+        <div class="concept-category-title-container">
+          <h2 class="concept-category-title">${info.categoryTitle}</h2>
+          <button class="expand-btn">
+            <img src="${info.expandBtn}">
+          </button>
+          <button class="shrink-btn">
+            <img src="${info.shrinkBtn}">
+          </button>
+        </div>
+        <section class="concept-subcategory">
+          <div class="concept-subcategory-title-container">
+            <button class="expand-btn">
+              <img src="${info.expandBtn}">
+            </button>
+            <button class="shrink-btn">
+              <img src="${info.shrinkBtn}">
+            </button>
+            <button class="concept-subcategory-btn">${info.subcategoryTitle}</button>
+          </div>
+          <ul class="concept-list">
+            <li class="concept-item">
+              <button>${info.conceptTitle}</button>
+              <p>${info.conceptDescription}</p>
+            </li>
+          </ul>
+        </section>
+      </section>
+    `
+  });
+  
+  document.getElementById('js-entry-wrapper-tab3')
+    .innerHTML = entryInfoHTML;
+}
+
