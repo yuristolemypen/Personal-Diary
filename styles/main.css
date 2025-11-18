@@ -106,6 +106,10 @@ main {
   padding: 10px 20px 0 20px;
 }
 
+.concept-subcategory {
+  /* display: none; */
+}
+
 .concept-category-title-container,
 .concept-subcategory-title-container {
   display: flex;
@@ -140,14 +144,22 @@ main {
   filter: invert(100%)
 }
 
-.concept-list button {
+.concept-list.hidden {
+  /* display: none; */
+}
+
+.concept-title-btn {
   font-family: "Karla";
   color: var(--text-underline);
   font-size: 1.15rem;
 }
 
-.concept-list p {
+.concept-description {
   font-size: 1rem;
+}
+
+.concept-description.hidden {
+  display: none;
 }
 
 .concept-list button:hover {

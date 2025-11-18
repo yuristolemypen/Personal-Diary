@@ -4,6 +4,7 @@ import { renderEntryInfo3 } from "./index-main/entryInfo3.js";
 import { renderGalleryInfo, renderGalleryPictureInfo } from "./index-main/entryInfo4.js";
 import { showActiveSection } from "./logic/tabsActive.js";
 import { gallerySectionToggle, galleryCategoryToggle } from "./logic/gallery.js";
+import { conceptToggle, subConceptToggle, conceptListToggle } from "./logic/concept.js";
 
 renderEntryInfo();
 renderEntryInfo2();
@@ -13,3 +14,6 @@ renderGalleryPictureInfo()
 showActiveSection();
 gallerySectionToggle();
 galleryCategoryToggle();
+conceptToggle();
+subConceptToggle();
+conceptListToggle();

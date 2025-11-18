@@ -38,9 +38,9 @@ export function galleryCategoryToggle() {
     }
 
     if (event.target.closest('.shrink-btn')) {
-      galleryAlbum.style.display = 'block';
-      expandBtn.style.display = 'block';
-      shrinkBtn.style.display = 'none';
+      galleryAlbum.style.display = '';
+      expandBtn.style.display = '';
+      shrinkBtn.style.display = '';
     }; 
   });
 }
