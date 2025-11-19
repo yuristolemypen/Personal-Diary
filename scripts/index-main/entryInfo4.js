@@ -12,11 +12,11 @@ export function renderGalleryInfo() {
           <button class="expand-btn">
             <img src="${info.expandBtn}">
           </button>
-          <button class="shrink-btn">
+          <button class="shrink-btn hidden">
             <img src="${info.shrinkBtn}">
           </button>
         </div>
-        <ul class="gallery-album-list">
+        <ul class="gallery-album-list hidden">
           <li class="gallery-album-item">
             <button class="gallery-album-title-btn">${info.albumTitle}</button>
           </li>

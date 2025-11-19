@@ -11,21 +11,21 @@ export function renderEntryInfo3() {
           <button class="expand-btn title">
             <img src="${info.expandBtn}">
           </button>
-          <button class="shrink-btn title">
+          <button class="shrink-btn title hidden">
             <img src="${info.shrinkBtn}">
           </button>
         </div>
-        <section class="concept-subcategory">
+        <section class="concept-subcategory hidden">
           <div class="concept-subcategory-title-container">
             <button class="expand-btn sub-title">
               <img src="${info.expandBtn}">
             </button>
-            <button class="shrink-btn sub-title">
+            <button class="shrink-btn sub-title hidden">
               <img src="${info.shrinkBtn}">
             </button>
-            <button class="concept-subcategory-btn">${info.subcategoryTitle}</button>
+            <p class="concept-subcategory-title">${info.subcategoryTitle}</p>
           </div>
-          <ul class="concept-list">
+          <ul class="concept-list hidden">
             <li class="concept-item">
               <button class = "concept-title-btn">${info.conceptTitle}</button>
               <p class = "concept-description hidden">${info.conceptDescription}</p>

@@ -106,8 +106,8 @@ main {
   padding: 10px 20px 0 20px;
 }
 
-.concept-subcategory {
-  /* display: none; */
+.concept-subcategory.hidden {
+  display: none;
 }
 
 .concept-category-title-container,
@@ -118,7 +118,7 @@ main {
   padding: 6px 0;
 }
 
-.concept-subcategory-btn {
+.concept-subcategory-title {
   font-family: "Roboto";
   color: var(--text-primary);
   font-size: 1.25rem;
@@ -134,7 +134,8 @@ main {
   user-select: none;
 }
 
-.shrink-btn {
+.expand-btn.hidden, 
+.shrink-btn.hidden {
   display: none;
 }
 
@@ -145,13 +146,14 @@ main {
 }
 
 .concept-list.hidden {
-  /* display: none; */
+  display: none;
 }
 
 .concept-title-btn {
   font-family: "Karla";
   color: var(--text-underline);
   font-size: 1.15rem;
+  cursor: pointer;
 }
 
 .concept-description {
@@ -166,7 +168,6 @@ main {
   text-decoration: underline;
 }
 
-.concept-subcategory-btn,
 .concept-list button {
   background-color: transparent;
   border: none;
@@ -178,6 +179,10 @@ main {
   list-style-type: none;
   padding: 6px 12px;
   line-height: 1.5rem;
+}
+
+.gallery-album-list.hidden {
+  display: none;
 }
 
 .gallery-container {

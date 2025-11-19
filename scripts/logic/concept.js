@@ -16,20 +16,16 @@ export function conceptToggle() {
     const shrinkBtnTitle = category.querySelector('.shrink-btn.title');
 
     if (expandBtn) {
-      subCategory.style.display = 'none';
-      expandBtnTitle.style.display = 'none';
-      shrinkBtnTitle.style.display = 'block';
-
-      return;
+      subCategory.classList.remove('hidden');
+      expandBtnTitle.classList.add('hidden');
+      shrinkBtnTitle.classList.remove('hidden');
     };
 
     if (shrinkBtn) {
-      subCategory.style.display = '';
-      expandBtnTitle.style.display = '';
-      shrinkBtnTitle.style.display = '';
-
-      return;
-    }
+      subCategory.classList.add('hidden');
+      expandBtnTitle.classList.remove('hidden');
+      shrinkBtnTitle.classList.add('hidden');
+    };
   });
 };
 
@@ -50,19 +46,15 @@ export function subConceptToggle() {
     const shrinkBtnTitle = category.querySelector('.shrink-btn.sub-title');
 
     if (expandBtn) {
-      conceptList.style.display = 'none';
-      expandBtnTitle.style.display = 'none';
-      shrinkBtnTitle.style.display = 'block';
-
-      return;
+      conceptList.classList.remove('hidden');
+      expandBtnTitle.classList.add('hidden');
+      shrinkBtnTitle.classList.remove('hidden');
     };
 
     if (shrinkBtn) {
-      conceptList.style.display = '';
-      expandBtnTitle.style.display = '';
-      shrinkBtnTitle.style.display = '';
-
-      return;
+      conceptList.classList.add('hidden');
+      expandBtnTitle.classList.remove('hidden');
+      shrinkBtnTitle.classList.add('hidden');
     }
   });
 }
