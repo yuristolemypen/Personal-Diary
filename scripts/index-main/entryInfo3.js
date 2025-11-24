@@ -31,12 +31,18 @@ export function renderEntryInfo3() {
               <p class = "concept-description hidden">${info.conceptDescription}</p>
             </li>
           </ul>
+          <button class="add-concept-btn"><img src="${info.expandBtn}"></button>
         </section>
+        <button class="add-subcategory-btn"><img src="${info.expandBtn}"></button>
       </section>
     `
   });
   
   document.getElementById('js-entry-wrapper-tab3')
-    .innerHTML = entryInfoHTML;
+    .innerHTML = `${entryInfoHTML}
+      <button id="js-add-category-btn" class="add-category-btn">
+        <img src="../images/svg-icons/plus-btn.svg">
+      </button>
+    `;
 }
 
